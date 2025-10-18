@@ -15,4 +15,9 @@ public class Address
         _state = state;
         _country = country;
     }
+
+    public override string ToString()
+    {
+        return $"{_street}, {_city}, {_state}, {_country}";
+    }
 }
