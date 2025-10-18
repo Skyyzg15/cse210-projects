@@ -20,7 +20,7 @@ public class Order
         Products.Remove(product);
     }
 
-    public int TotalPrice => Products.Sum(p => p.Quantity * p.Price);
+    public int TotalPrice => Products.Sum(p => p._quantity * p._price);
     public void Print()
     {
         Console.WriteLine("Order Details:");
